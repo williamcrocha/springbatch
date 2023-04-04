@@ -25,7 +25,7 @@ docker-compose up -d
 ```
 2. Open another terminal, go to the application folder/target and type:
 ```shell
-docker exec -it postgres bash
+docker exec -it postgres bash OR docker exec -it <container id> bash 
 ```
 
 3. Once inside, login into Postgres server:
@@ -33,7 +33,7 @@ docker exec -it postgres bash
 psql -d testdb -U postgres
 ```
 
-4. Check if table is empty:
+4. Checking if table is empty OR not exist:
 ```shell
 SELECT * FROM person;
 ```
